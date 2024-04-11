@@ -9,15 +9,20 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v3
+      - name: Checkout do repositório
+        uses: actions/checkout@v4
+
+      - name: Configuração do Node.js
+        uses: actions/setup-node@v3
         with:
           node-version: "14"
-      - name: Build web-app
+
+      - name: Compilar aplicação web
         run: |
           npm install
           npm run build
-      - name: Deploy to gh-pages
+
+      - name: Implantação no GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
