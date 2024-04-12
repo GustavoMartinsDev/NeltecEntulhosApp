@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/neltecentulhos/static/css/main.f855e6bc.css",
-    "main.js": "/neltecentulhos/static/js/main.91b7a7ad.js",
-    "index.html": "/neltecentulhos/index.html",
-    "main.f855e6bc.css.map": "/neltecentulhos/static/css/main.f855e6bc.css.map",
-    "main.91b7a7ad.js.map": "/neltecentulhos/static/js/main.91b7a7ad.js.map"
+    "main.css": "/NeltecEntulhosApp/static/css/main.f855e6bc.css",
+    "main.js": "/NeltecEntulhosApp/static/js/main.91b7a7ad.js",
+    "index.html": "/NeltecEntulhosApp/index.html",
+    "main.f855e6bc.css.map": "/NeltecEntulhosApp/static/css/main.f855e6bc.css.map",
+    "main.91b7a7ad.js.map": "/NeltecEntulhosApp/static/js/main.91b7a7ad.js.map"
   },
   "entrypoints": [
     "static/css/main.f855e6bc.css",
