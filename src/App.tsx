@@ -6,7 +6,7 @@ import Header from "./Pages/Header";
 function App() {
   return (
     <Routes>
-      <Route path="/" element={<Header />} />
+      <Route path="/" index element={<Header />} />
       <Route path="*" element={<Header />} />
     </Routes>
   );
