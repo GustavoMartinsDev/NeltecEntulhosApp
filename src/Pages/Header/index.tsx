@@ -4,9 +4,7 @@ const Header = () => {
   return (
     <div className="App">
       <header className="App-header">
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
+        <h4>Jessy eu te amo S2</h4>
         <a
           className="App-link"
           href="https://reactjs.org"
