@@ -1,19 +1,18 @@
-import React from "react";
+import styles from "./styles.module.scss";
+import logoNeltec from "../../Assets/logoEmpresa2.jpeg";
 
 const Header = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <h4>Jessy eu te amo S2</h4>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={styles.container}>
+      <div className="row">
+        <div className="col-md-3">
+          <img
+            src={logoNeltec}
+            alt="Neltec Entulhos"
+            className={styles.logoImg}
+          />
+        </div>
+      </div>
     </div>
   );
 };
