@@ -1,5 +1,5 @@
 import { Box, Container, Grid, Typography, styled } from "@mui/material";
-import Avatar from "../../../../assets/images/avatar.jpg";
+import Neltec from "../../../../assets/images/logoNeltec.png";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import StyledButton from "../../../../components/StyledButton/StyledButton";
 import { AnimatedBackground } from "../../../../components/AnimatedBackground/AnimatedBackground";
@@ -54,7 +54,7 @@ const Hero = () => {
                   <AnimatedBackground />
                 </Box>
                 <Box position="relative" textAlign="center">
-                  <StyledImg src={Avatar} />
+                  <StyledImg src={Neltec} />
                 </Box>
               </Box>
             </Grid>
@@ -69,10 +69,11 @@ const Hero = () => {
               </Typography>
               <Typography
                 color="primary.contrastText"
-                variant="h2"
+                variant="h4"
                 textAlign="center"
               >
-                Aluguel de caçamba estacionaria em taboão da serra.
+                Aluguel de Caçamba Estacionária em Taboão da Serra - Soluções
+                rápidas e eficientes para o descarte de entulho.
               </Typography>
               <Grid
                 container
