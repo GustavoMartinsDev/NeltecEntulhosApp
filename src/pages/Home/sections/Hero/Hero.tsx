@@ -28,7 +28,7 @@ const Hero = () => {
 
   const handleWhatsApp = () => {
     const url =
-      "https://wa.me/5511972147541?text=Olá%20Gustavo,%20interessante%20seu%20portifolio";
+      "https://wa.me/5511975153372?text=Olá%20Nelson,%20Gostaria%20de%20falar%20sobre%20as%20caçambas.";
     window.open(url, "_blank");
   };
 
