@@ -1,7 +1,7 @@
 import axios from "axios";
 import { Cacamba, Cliente, Locacao, DashboardStats } from "../types";
 
-const API_BASE_URL = "http://localhost:3001";
+const API_BASE_URL = "http://localhost:3004";
 
 // Configuração do Axios
 const api = axios.create({

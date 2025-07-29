@@ -30,6 +30,8 @@ export interface Cliente {
 export interface Cacamba {
   id: string;
   numero: string;
+  codigo: string; // Código identificador da caçamba
+  tamanho: string; // Ex: "5m³", "3m³", etc.
   capacidade: number; // metros cúbicos
   status: "disponivel" | "locada" | "manutencao" | "em_transito";
   localizacao?: {
@@ -58,12 +60,21 @@ export interface Locacao {
     cep: string;
     complemento?: string;
   };
+  enderecoEntrega: {
+    rua: string;
+    numero: string;
+    bairro: string;
+    cidade: string;
+    cep: string;
+    complemento?: string;
+  };
   coordenadas: {
     lat: number;
     lng: number;
   };
   valor: number;
-  status: "ativa" | "finalizada" | "cancelada";
+  valorTotal: number; // Valor total da locação
+  status: "ativa" | "finalizada" | "cancelada" | "pendente";
   observacoes?: string;
   fotos: string[];
   createdAt: string;
@@ -80,7 +91,7 @@ export interface DashboardStats {
 }
 
 export interface FormData {
-  [key: string]: any;
+  [key: string]: string | number | boolean | undefined;
 }
 
 export interface AlertProps {

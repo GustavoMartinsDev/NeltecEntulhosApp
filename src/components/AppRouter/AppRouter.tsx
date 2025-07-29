@@ -11,6 +11,13 @@ import { useAuth } from "../../hooks/useAuth";
 import HomePage from "../../pages/HomePage";
 import LoginPage from "../../pages/LoginPage";
 import DashboardPage from "../../pages/DashboardPage";
+import {
+  CacambasPage,
+  LocacoesPage,
+  ClientesPage,
+  HistoricoPage,
+  MapaPage,
+} from "../../pages";
 
 // Componente para rotas protegidas
 const ProtectedRoute: React.FC<{ children: React.ReactNode }> = ({
@@ -66,7 +73,7 @@ const AppContent: React.FC = () => {
           path="/cacambas"
           element={
             <ProtectedRoute>
-              <DashboardPage
+              <CacambasPage
                 selectedMenuItem="cacambas"
                 onMenuItemSelect={handleMenuItemSelect}
               />
@@ -78,7 +85,7 @@ const AppContent: React.FC = () => {
           path="/locacoes"
           element={
             <ProtectedRoute>
-              <DashboardPage
+              <LocacoesPage
                 selectedMenuItem="locacoes"
                 onMenuItemSelect={handleMenuItemSelect}
               />
@@ -90,7 +97,7 @@ const AppContent: React.FC = () => {
           path="/clientes"
           element={
             <ProtectedRoute>
-              <DashboardPage
+              <ClientesPage
                 selectedMenuItem="clientes"
                 onMenuItemSelect={handleMenuItemSelect}
               />
@@ -102,7 +109,7 @@ const AppContent: React.FC = () => {
           path="/historico"
           element={
             <ProtectedRoute>
-              <DashboardPage
+              <HistoricoPage
                 selectedMenuItem="historico"
                 onMenuItemSelect={handleMenuItemSelect}
               />
@@ -114,7 +121,7 @@ const AppContent: React.FC = () => {
           path="/mapa"
           element={
             <ProtectedRoute>
-              <DashboardPage
+              <MapaPage
                 selectedMenuItem="mapa"
                 onMenuItemSelect={handleMenuItemSelect}
               />
