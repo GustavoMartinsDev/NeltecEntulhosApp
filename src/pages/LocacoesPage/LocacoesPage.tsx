@@ -3,7 +3,6 @@ import {
   Box,
   Grid,
   Card,
-  CardContent,
   Chip,
   Button,
   TextField,
@@ -138,7 +137,7 @@ const LocacoesPage: React.FC<LocacoesPageProps> = ({
   const handleExcluirLocacao = async (id: string) => {
     if (confirm("Tem certeza que deseja excluir esta locação?")) {
       try {
-        await apiService.delete(`/locacoes/${id}`);
+        await apiService.locacoes.delete(id);
         carregarDados();
       } catch (error) {
         console.error("Erro ao excluir locação:", error);
@@ -308,7 +307,11 @@ const LocacoesPage: React.FC<LocacoesPageProps> = ({
                       <FText>{formatarData(locacao.dataInicio)}</FText>
                     </TableCell>
                     <TableCell>
-                      <FText>{formatarData(locacao.dataFim)}</FText>
+                      <FText>
+                        {locacao.dataFim
+                          ? formatarData(locacao.dataFim)
+                          : "Em andamento"}
+                      </FText>
                     </TableCell>
                     <TableCell>
                       <FText weight="bold" color={quickColors.success}>
@@ -318,7 +321,13 @@ const LocacoesPage: React.FC<LocacoesPageProps> = ({
                     <TableCell>
                       <Chip
                         label={getStatusLabel(locacao.status)}
-                        color={getStatusColor(locacao.status) as any}
+                        sx={{
+                          backgroundColor: `${getStatusColor(
+                            locacao.status
+                          )}20`,
+                          color: getStatusColor(locacao.status),
+                          fontWeight: "bold",
+                        }}
                         size="small"
                       />
                     </TableCell>
@@ -405,7 +414,11 @@ const LocacoesPage: React.FC<LocacoesPageProps> = ({
                 <FText size="sm" weight="bold">
                   Data Fim:
                 </FText>
-                <FText>{formatarData(locacaoSelecionada.dataFim)}</FText>
+                <FText>
+                  {locacaoSelecionada.dataFim
+                    ? formatarData(locacaoSelecionada.dataFim)
+                    : "Em andamento"}
+                </FText>
               </Grid>
               <Grid item xs={12}>
                 <FText size="sm" weight="bold">

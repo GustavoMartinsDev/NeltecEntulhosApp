@@ -6,7 +6,6 @@ import {
   CardContent,
   CardMedia,
   Chip,
-  Typography,
   Button,
   TextField,
   MenuItem,
@@ -104,7 +103,7 @@ const CacambasPage: React.FC<CacambasPageProps> = ({
   const handleExcluirCacamba = async (id: string) => {
     if (confirm("Tem certeza que deseja excluir esta caçamba?")) {
       try {
-        await apiService.delete(`/cacambas/${id}`);
+        await apiService.cacambas.delete(id);
         carregarCacambas();
       } catch (error) {
         console.error("Erro ao excluir caçamba:", error);
@@ -209,7 +208,13 @@ const CacambasPage: React.FC<CacambasPageProps> = ({
                       </Box>
                       <Chip
                         label={getStatusLabel(cacamba.status)}
-                        color={getStatusColor(cacamba.status) as any}
+                        sx={{
+                          backgroundColor: `${getStatusColor(
+                            cacamba.status
+                          )}20`,
+                          color: getStatusColor(cacamba.status),
+                          fontWeight: "bold",
+                        }}
                         size="small"
                       />
                     </Box>
@@ -229,7 +234,8 @@ const CacambasPage: React.FC<CacambasPageProps> = ({
                         }}
                       />
                       <FText size="sm" color={quickColors.text.secondary}>
-                        {cacamba.localizacao.endereco}
+                        {cacamba.localizacao?.endereco ||
+                          "Localização não definida"}
                       </FText>
                     </Box>
 
