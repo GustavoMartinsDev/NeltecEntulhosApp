@@ -1,0 +1,172 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "email": "admin@neltec.com",
+      "password": "admin123",
+      "name": "Administrador",
+      "role": "admin",
+      "createdAt": "2025-01-15T10:00:00.000Z"
+    },
+    {
+      "id": "2",
+      "email": "operador@neltec.com",
+      "password": "op123",
+      "name": "Operador",
+      "role": "operator",
+      "createdAt": "2025-01-15T10:00:00.000Z"
+    }
+  ],
+  "clientes": [
+    {
+      "id": "1",
+      "nome": "João Silva Santos",
+      "email": "joao@email.com",
+      "telefone": "(11) 99999-1111",
+      "cpfCnpj": "123.456.789-00",
+      "endereco": {
+        "rua": "Rua das Flores",
+        "numero": "123",
+        "bairro": "Centro",
+        "cidade": "Taboão da Serra",
+        "cep": "06760-000",
+        "complemento": "Apt 45"
+      },
+      "createdAt": "2025-01-10T08:30:00.000Z",
+      "updatedAt": "2025-01-10T08:30:00.000Z"
+    },
+    {
+      "id": "2",
+      "nome": "Maria Oliveira Ltda",
+      "email": "contato@mariaconstrucoes.com",
+      "telefone": "(11) 88888-2222",
+      "cpfCnpj": "12.345.678/0001-90",
+      "endereco": {
+        "rua": "Av. Principal",
+        "numero": "456",
+        "bairro": "Industrial",
+        "cidade": "Taboão da Serra",
+        "cep": "06763-000",
+        "complemento": ""
+      },
+      "createdAt": "2025-01-12T14:15:00.000Z",
+      "updatedAt": "2025-01-12T14:15:00.000Z"
+    }
+  ],
+  "cacambas": [
+    {
+      "id": "1",
+      "numero": "NT-001",
+      "capacidade": 4,
+      "status": "disponivel",
+      "localizacao": {
+        "lat": -23.6084,
+        "lng": -46.7589,
+        "endereco": "Pátio Neltec - Taboão da Serra"
+      },
+      "fotos": [
+        "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=400",
+        "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=400"
+      ],
+      "createdAt": "2025-01-01T00:00:00.000Z",
+      "updatedAt": "2025-01-28T10:00:00.000Z"
+    },
+    {
+      "id": "2",
+      "numero": "NT-002",
+      "capacidade": 4,
+      "status": "locada",
+      "localizacao": {
+        "lat": -23.6123,
+        "lng": -46.7612,
+        "endereco": "Rua das Flores, 123 - Taboão da Serra"
+      },
+      "fotos": [
+        "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=400"
+      ],
+      "createdAt": "2025-01-01T00:00:00.000Z",
+      "updatedAt": "2025-01-20T09:00:00.000Z"
+    },
+    {
+      "id": "3",
+      "numero": "NT-003",
+      "capacidade": 4,
+      "status": "disponivel",
+      "localizacao": {
+        "lat": -23.6084,
+        "lng": -46.7589,
+        "endereco": "Pátio Neltec - Taboão da Serra"
+      },
+      "fotos": [
+        "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=400"
+      ],
+      "createdAt": "2025-01-01T00:00:00.000Z",
+      "updatedAt": "2025-01-28T10:00:00.000Z"
+    }
+  ],
+  "locacoes": [
+    {
+      "id": "1",
+      "clienteId": "1",
+      "cacambaId": "2",
+      "dataInicio": "2025-01-20T09:00:00.000Z",
+      "dataFim": "2025-01-27T17:00:00.000Z",
+      "endereco": {
+        "rua": "Rua das Flores",
+        "numero": "123",
+        "bairro": "Centro",
+        "cidade": "Taboão da Serra",
+        "cep": "06760-000",
+        "complemento": "Frente da casa"
+      },
+      "coordenadas": {
+        "lat": -23.6123,
+        "lng": -46.7612
+      },
+      "valor": 280.0,
+      "status": "ativa",
+      "observacoes": "Retirar entulho de reforma",
+      "fotos": [
+        "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=400",
+        "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=400"
+      ],
+      "createdAt": "2025-01-20T09:00:00.000Z",
+      "updatedAt": "2025-01-20T09:00:00.000Z"
+    },
+    {
+      "id": "2",
+      "clienteId": "2",
+      "cacambaId": "1",
+      "dataInicio": "2025-01-15T08:00:00.000Z",
+      "dataFim": "2025-01-18T16:00:00.000Z",
+      "endereco": {
+        "rua": "Av. Principal",
+        "numero": "456",
+        "bairro": "Industrial",
+        "cidade": "Taboão da Serra",
+        "cep": "06763-000",
+        "complemento": "Obras da fábrica"
+      },
+      "coordenadas": {
+        "lat": -23.6095,
+        "lng": -46.7601
+      },
+      "valor": 320.0,
+      "status": "finalizada",
+      "observacoes": "Entulho de construção civil",
+      "fotos": [
+        "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=400"
+      ],
+      "createdAt": "2025-01-15T08:00:00.000Z",
+      "updatedAt": "2025-01-18T16:00:00.000Z"
+    }
+  ],
+  "stats": {
+    "totalCacambas": 50,
+    "cacambasDisponiveis": 32,
+    "cacambasLocadas": 18,
+    "locacoesAtivas": 18,
+    "receitaTotal": 125000,
+    "receitaMensal": 28500
+  }
+}

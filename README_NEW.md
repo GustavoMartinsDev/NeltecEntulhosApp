@@ -9,39 +9,46 @@ Sistema completo para gestão de caçambas estacionárias de remoção de entulh
 ## ✨ Funcionalidades
 
 ### 🔐 Sistema de Autenticação
+
 - Login seguro com validação
 - Controle de acesso por perfil (Admin/Operador)
 - Gestão de sessões
 
 ### 📊 Dashboard Principal
+
 - Visão geral das estatísticas
 - Caçambas disponíveis e locadas
 - Receita mensal e total
 - Indicadores de performance
 
 ### 🚛 Gestão de Caçambas
+
 - Cadastro de caçambas com numeração
 - Status de disponibilidade (Disponível, Locada, Manutenção)
 - Upload de múltiplas fotos
 - Controle de localização
 
 ### 📋 Sistema de Locações
+
 - Cadastro de locações com endereço completo
 - Coordenadas GPS para rastreamento
 - Upload de fotos da locação
 - Histórico completo de locações
 
 ### 👥 Gestão de Clientes
+
 - Cadastro completo de clientes
 - CPF/CNPJ e dados de contato
 - Endereço detalhado
 
 ### 🗺️ Mapa Interativo
+
 - Visualização de todas as caçambas no mapa
 - Localização em tempo real
 - Status visual das caçambas
 
 ### 📈 Relatórios e Histórico
+
 - Histórico completo de operações
 - Relatórios de performance
 - Análise de dados
@@ -49,21 +56,25 @@ Sistema completo para gestão de caçambas estacionárias de remoção de entulh
 ## 🛠 Tecnologias
 
 ### Frontend
+
 - **React 18** - Framework principal
 - **TypeScript** - Tipagem estática
 - **Material-UI** - Sistema de componentes
 - **React Router** - Navegação
 
 ### Arquitetura
+
 - **Atomic Design** - Estrutura de componentes escalável
 - **Clean Code** - Código limpo e bem documentado
 - **Responsive Design** - Interface adaptável
 
 ### Backend (Temporário)
+
 - **JSON Server** - Simulação de API REST
 - **Axios** - Cliente HTTP
 
 ### Futura Integração
+
 - **Firebase** - Backend definitivo planejado
 
 ## 🏗 Estrutura do Projeto
@@ -100,28 +111,33 @@ Sistema completo para gestão de caçambas estacionárias de remoção de entulh
 ## 🚀 Como Executar
 
 ### Pré-requisitos
+
 - Node.js >= 16.0.0
 - npm >= 8.0.0
 
 ### Instalação
 
 1. **Clone o repositório**
+
 ```bash
 git clone https://github.com/GustavoMartinsDev/NeltecEntulhosApp.git
 cd NeltecEntulhosApp
 ```
 
 2. **Instale as dependências**
+
 ```bash
 npm install --legacy-peer-deps
 ```
 
 3. **Execute o projeto completo**
+
 ```bash
 npm run dev:full
 ```
 
 Isso iniciará:
+
 - **Frontend**: http://localhost:5173
 - **API JSON Server**: http://localhost:3001
 
@@ -138,16 +154,19 @@ npm run lint         # Análise de código
 ## 🔐 Credenciais de Acesso
 
 ### Administrador
+
 - **Email**: admin@neltec.com
 - **Senha**: admin123
 
 ### Operador
+
 - **Email**: operador@neltec.com
 - **Senha**: op123
 
 ## 🎨 Sistema de Design
 
 ### Paleta de Cores (Verde Ambiental)
+
 - **Primary**: #22c55e (Verde principal)
 - **Secondary**: #64748b (Cinza)
 - **Success**: #22c55e (Verde)
@@ -155,11 +174,13 @@ npm run lint         # Análise de código
 - **Error**: #ef4444 (Vermelho)
 
 ### Tipografia
+
 - **Font Family**: Inter, Roboto, Helvetica, Arial
 - **Tamanhos**: xs (12px) → 5xl (48px)
 - **Pesos**: light → extrabold
 
 ### Espaçamento
+
 - **Sistema**: Baseado em 4px
 - **Variações**: xs (4px) → 3xl (64px)
 
@@ -176,12 +197,14 @@ npm run lint         # Análise de código
 ## 👨‍💻 Desenvolvimento
 
 ### Padrões de Código
+
 - **ESLint** - Análise estática
 - **TypeScript Strict** - Tipagem rigorosa
 - **Prettier** - Formatação automática
 - **Conventional Commits** - Padrão de commits
 
 ### Contribuição
+
 1. Fork o projeto
 2. Crie uma branch (`git checkout -b feature/nova-funcionalidade`)
 3. Commit suas mudanças (`git commit -m 'feat: adiciona nova funcionalidade'`)
@@ -195,6 +218,7 @@ Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para ma
 ## 📞 Contato
 
 **Neltec Entulhos**
+
 - 📍 Taboão da Serra - SP
 - 📞 (11) 99999-9999
 - 📧 contato@neltec.com
@@ -202,4 +226,4 @@ Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para ma
 
 ---
 
-*Desenvolvido com ❤️ por Gustavo Martins*
+_Desenvolvido com ❤️ por Gustavo Martins_
